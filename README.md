@@ -55,7 +55,7 @@ This script generates a JSON file containing a detailed list of all places in a 
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/roshaanmehar/Wikipedia-Places-Scraper.git
    ```
 2. Navigate to the project directory:
    ```bash
