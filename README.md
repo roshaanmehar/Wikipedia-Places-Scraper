@@ -18,11 +18,13 @@
 
 ## Project Description
 
+<p>
 This project is a web scraping tool designed to extract information about places in New York from Wikipedia. The script systematically scrapes different alphabetical sections and extracts detailed data, including the number of counties, associated county names, and ZIP code ranges. 
 I developed this script as a supplementary tool for my primary data scraper, with the goal of enhancing data integrity and completeness. One of the challenges I faced was ensuring that no valuable data points were left uncollected.
 Through research, I discovered that geographical divisions in the United States, while loosely defined, often rely on "places" as identifiable locations. Unlike postal codes, which are standardized by the postal service but offer limited coverage, "places" can be more reliably recognized and mapped using resources like Google Maps.
 By leveraging a comprehensive list of places for each state, I could significantly reduce the chances of missing any data. Although this approach introduces some redundancy (up to 98% overlap), it ensures that all possible leads are accounted for.
 This script generates a JSON file containing a detailed list of all places in a given state, serving as a valuable resource for more thorough and efficient data scraping.
+</p>
 ---
 
 ## Key Features
