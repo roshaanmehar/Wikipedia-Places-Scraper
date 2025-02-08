@@ -20,6 +20,10 @@
 
 This project is a web scraping tool designed to extract information about places in New York from Wikipedia. The script systematically scrapes different alphabetical sections and extracts detailed data, including the number of counties, associated county names, and ZIP code ranges.
 
+I developed this script as a supplementary tool for my primary data scraper, with the goal of enhancing data integrity and completeness. One of the challenges I faced was ensuring that no valuable data points were left uncollected.
+Through research, I discovered that geographical divisions in the United States, while loosely defined, often rely on "places" as identifiable locations. Unlike postal codes, which are standardized by the postal service but offer limited coverage, "places" can be more reliably recognized and mapped using resources like Google Maps.
+By leveraging a comprehensive list of places for each state, I could significantly reduce the chances of missing any data. Although this approach introduces some redundancy (up to 98% overlap), it ensures that all possible leads are accounted for.
+This script generates a JSON file containing a detailed list of all places in a given state, serving as a valuable resource for more thorough and efficient data scraping.
 ---
 
 ## Key Features
@@ -39,7 +43,13 @@ This project is a web scraping tool designed to extract information about places
 - **JSON**: For structured data storage.
 
 ---
+### This is the Wikipedia Page in question to be scraped:
+<div>
+   <img src="https://github.com/roshaanmehar/Wikipedia-Places-Scraper/blob/main/websitescreenshot1.png" width="500">
+<img src="https://github.com/roshaanmehar/Wikipedia-Places-Scraper/blob/main/websitescreenshot2.png" width="500">
+   </div>
 
+   
 ## Installation Guide
 
 1. Clone this repository:
@@ -69,6 +79,10 @@ This project is a web scraping tool designed to extract information about places
 
 ---
 
+## If the code ran without any problems the output on the terminal should look something like this:
+<img src="https://github.com/roshaanmehar/Wikipedia-Places-Scraper/blob/main/terminaloutput.png" width="500">
+- No table found for X means that, there were no places in New York, whose name started with the letter X.
+
 ## Customization Options
 
 To customize the scraping process:
@@ -88,6 +102,10 @@ To customize the scraping process:
   - Lower and Upper ZIP Codes
   
 Ensure the target Wikipedia page is accessible and formatted as expected before running the script.
+
+## The output data should look something like this:
+<img src="https://github.com/roshaanmehar/Wikipedia-Places-Scraper/blob/main/samplecode.png" width="500">
+
 
 ---
 
